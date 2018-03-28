@@ -1,2 +1,1 @@
-# HelloRinoa
-Demo Demo Demo
+# Just For Fun
