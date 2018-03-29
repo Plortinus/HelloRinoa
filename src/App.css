@@ -1,15 +1,16 @@
-.rinoa {
-  display: block;
-  width: 200px;
-  margin: 10px auto;
-  height: 40px;
-  border-radius: 10px;
-  outline: none;
-  color: green;
-  border: 1px solid currentColor;
-  cursor: pointer;
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
-
-.rinoa:hover {
-  color: darkorange;
+.Site-content {
+  flex: 1;
+}
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  list-style: none;
+}
+footer {
+  text-align: center;
 }
