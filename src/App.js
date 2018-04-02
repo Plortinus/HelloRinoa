@@ -8,8 +8,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="Site">
-         <header>
+        <div className="all">
           <nav className="nav">
             <ul>
               <li>
@@ -20,12 +19,10 @@ class App extends Component {
               </li>
             </ul>
           </nav>
-         </header>
-          <div className="Site-content">
+          <div className="content">
             <Route path="/currentColor" component={CurrentColor} />
             <Route path="/width" component={Width} />
           </div>
-          <footer>页脚</footer>
         </div>
       </Router>
     );
