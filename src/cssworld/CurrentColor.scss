@@ -1,15 +1,31 @@
+// 流体布局
+.parent {
+  width: 1000px;
+  height: 500px;
+  border: 1px solid currentColor;
+  display: flex;
+  flex-flow: row wrap; // 主轴方向:水平方向;换行
+  align-content: flex-start; // 多根轴线的对齐方式
+}
+
+.child {
+  width: 250px;
+  height: 250px;
+  flex: 0 0 25%;
+  border: 1px solid currentColor;  // 继承颜色
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .rinoa {
   display: block;
-  width: 200px;
   margin: 10px auto;
   height: 40px;
   border-radius: 10px;
   outline: none;
-  color: green;
-  border: 1px solid currentColor;
+  border: 1px solid currentColor; //继承颜色
+  background: transparent;
   cursor: pointer;
-}
-
-.rinoa:hover {
-  color: darkorange;
 }
