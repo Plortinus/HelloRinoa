@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, NavLink, Switch } from "react-router-dom";
 import "./App.css";
-import CurrentColor from './cssworld/CurrentColor.jsx';
-import Width from './cssworld/Width.jsx';
+import CurrentColor from './cssworld/CurrentColor';
+import Width from './cssworld/Width';
 
 class App extends Component {
   render() {
@@ -10,18 +10,14 @@ class App extends Component {
       <Router>
         <div className="all">
           <nav className="nav">
-            <ul>
-              <li>
-                <Link to="/currentColor">CSS3 currentColor</Link>
-              </li>
-              <li>
-                <Link to="/width">Width</Link>
-              </li>
-            </ul>
+            <NavLink activeClassName="active-link" exact to="/currentColor">CSS3 currentColor</NavLink>
+            <NavLink activeClassName="active-link" exact to="/width">Width</NavLink>
           </nav>
           <div className="content">
-            <Route path="/currentColor" component={CurrentColor} />
-            <Route path="/width" component={Width} />
+            <Switch>
+              <Route path="/currentColor" component={CurrentColor} />
+              <Route path="/width" component={Width} />
+            </Switch>
           </div>
         </div>
       </Router>
