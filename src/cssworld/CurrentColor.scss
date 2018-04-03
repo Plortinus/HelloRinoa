@@ -1,31 +1,29 @@
 // 流体布局
-.parent {
+.c-currentColor {
   width: 1000px;
   height: 500px;
   border: 1px solid currentColor;
   display: flex;
   flex-flow: row wrap; // 主轴方向:水平方向;换行
   align-content: flex-start; // 多根轴线的对齐方式
-}
-
-.child {
-  width: 250px;
-  height: 250px;
-  flex: 0 0 25%;
-  border: 1px solid currentColor;  // 继承颜色
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.rinoa {
-  display: block;
-  margin: 10px auto;
-  height: 40px;
-  border-radius: 10px;
-  outline: none;
-  border: 1px solid currentColor; //继承颜色
-  background: transparent;
-  cursor: pointer;
+  .child {
+    width: 250px;
+    height: 250px;
+    flex: 0 0 25%;
+    border: 1px solid currentColor; // 继承颜色
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .rinoa {
+    display: block;
+    margin: 10px auto;
+    height: 40px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid currentColor; //继承颜色
+    background: transparent;
+    cursor: pointer;
+  }
 }
